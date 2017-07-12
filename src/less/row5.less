@@ -1,0 +1,293 @@
+@import "color.less";
+
+#row5{
+    margin-bottom: 30px;
+    .w{
+       .col1{
+            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAADCAMAAAB/P3U+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkJEODlEQkUxNzk2NjExRTY5OTdDQkQ2NDRFQjFCNUU1IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkJEODlEQkUyNzk2NjExRTY5OTdDQkQ2NDRFQjFCNUU1Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QkQ4OURCREY3OTY2MTFFNjk5N0NCRDY0NEVCMUI1RTUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QkQ4OURCRTA3OTY2MTFFNjk5N0NCRDY0NEVCMUI1RTUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7GI6sZAAAAD1BMVEXa2trExMTBwcHDw8P///8QPEuGAAAABXRSTlP/////APu2DlMAAAAZSURBVHjaYmBgZGCBAwZmJkYkHoocQIABAAogAIEAYnZPAAAAAElFTkSuQmCC") repeat-x 0 18px;
+            line-height: 35px;
+            height: 35px;
+            font-size: 24px;
+            text-align: center;
+            overflow: hidden;
+            padding-bottom:20px;
+            h3{
+                display: inline;
+                padding: 0 50px;
+                font-weight: 400;
+                font-size:26px;
+                font-family: "幼圆";
+                background-color: #f6f6f6;
+            }
+        }
+        .col2{
+            .entry-list{
+                .clearfix();
+                height: 530px;
+                
+                .entry-item{
+                    float:left;
+                    overflow: hidden;
+                    position: relative;
+                    margin: 0 5px 10px;
+                    background-color:   @normalcolor;
+                    width:390px;
+                    height: 170px;
+                    .entry-link{
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        &:hover .entry-img{
+                            transform: translateX(-10px);
+                        }
+                        .entry-img{
+                            display: block;
+                            width:400px;
+                            height: 170px;
+                            transition: transform .3s ease-in;
+                        }
+                        .entry-bg{
+                            position: absolute;
+                            width:36%;
+                            left:0;
+                            top:0;
+                            height: 100%;
+                            color: @normalcolor;
+                            z-index: 1;
+                            .entry-info{
+                                width:100px;
+                                padding-top:45px;
+                                font-size: 14px;
+                                margin: 0 auto;
+                                .entry-info-title{
+                                    overflow: hidden;
+                                    font-size: 22px;
+                                    font-family: "幼圆";
+                                    font-weight: 400;
+                                    height: 40px;
+                                    line-height: 40px;
+                                    text-align: center;
+                                    border-style: solid;
+                                    border-width: 2px 0 ;
+                                    border-color: white;
+                                }
+                                .entry-info-desc{
+                                    overflow: hidden;
+                                    margin-top: 8px;
+                                    height: 32px;
+                                    line-height: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .entry-item:nth-child(2) .entry-bg{
+                    background-color: #66B687;
+                }
+                .entry-item:nth-child(3) .entry-bg{
+                    background-color: #DBCF6E;
+                }
+                .entry-item:nth-child(4) .entry-bg{
+                    background-color: #534b5d;
+                }
+                .entry-item:nth-child(5) .entry-bg{
+                    background-color: #3b838c;
+                }
+                .entry-item:nth-child(6) .entry-bg{
+                    background-color: #d58717;
+                }
+                .entry-item:nth-child(7) .entry-bg{
+                    background-color: #7e5944;
+                }
+                .entry-item:nth-child(8){
+                    width:190px;
+                    .entry-bg{
+                        height: 80px;
+                        width:100%;
+                        bottom:0;
+                        top:auto;
+                        background-color: #a93931;
+                        .entry-info{
+                            padding-top:0;
+                            padding: 10px 0;
+                            width: 100%;
+                            text-align: center;
+                            .entry-info-title{
+                                margin: 0 auto;
+                                font-size: 14px;
+                                width:100px;
+                                height: 30px;
+                                line-height: 30px;
+                            }
+                        }
+                    }
+                    .entry-img{
+                        display: block;
+                        width: 200px;
+                        height: 170px;
+                    }
+                }
+                .entry-item:nth-child(9){
+                    width: 190px;
+                    .entry-bg{
+                        height: 80px;
+                        width:100%;
+                        bottom:0;
+                        top:auto;
+                        background-color: #642663;
+                        .entry-info{
+                            padding-top:0;
+                            padding: 10px 0;
+                            width: 100%;
+                            text-align: center;
+                            .entry-info-title{
+                                margin: 0 auto;
+                                font-size: 14px;
+                                width:100px;
+                                height: 30px;
+                                line-height: 30px;
+                            }
+                        }
+                    }
+                    .entry-img{
+                        display: block;
+                        width: 200px;
+                        height: 170px;
+                    }
+                }
+                .entry-live{
+                    float: right;
+                    height:350px;
+                    color: @normalcolor;
+                    .live-inner{
+                        width:100%;
+                        height: 100%;
+                        background-color: #333;
+                        .live-hd{
+                            position: absolute;
+                            top:0;
+                            left:0;
+                            width:100%;
+                            height: 38px;
+                            background-color: rgba(0,0,0,.57);      
+                            .live-hd-link{
+                                position: absolute;
+                                top:0;
+                                left:0;
+                                width:100%;
+                                height: 38px;
+                                line-height: 38px;
+                                color:@normalcolor;
+                                .live-hd-title{
+                                    text-indent: 24px;
+                                    line-height: 38px;
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                }
+                                .live-hd-more{
+                                    position: absolute;
+                                    right: 20px;
+                                    top:0;
+                                    height: 38px;
+                                    line-height: 38px;
+                                    color:@normalcolor;
+                                    padding-right: 24px;
+                                    .arrow{
+                                        position: absolute;
+                                        right: 0;
+                                        top:11px;
+                                        width:15px;
+                                        height: 20px;
+                                        line-height: 20px;
+                                    }
+                                }
+                            }              
+                        }
+                        .live-list{
+                            .live-item{
+                                display: none;
+                                .live-cover{
+                                    .live-img{
+                                        height: 350px;
+                                        margin-left: -38px;
+                                    }
+                                        &:after{
+                                            content: "";
+                                            position: absolute;
+                                            left: 0;
+                                            top:0;
+                                            width: 100%;
+                                            height: 100%;
+                                            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAB+CAMAAAA0lkDrAAAABGdBTUEAALGPC/xhBQAAATVQTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsHtJ/wAAAGd0Uk5TAFUFQ1kpUTsxHzU/ZjgiIxVTLhFlTRlhFE4LD18mMwclYEYdSQxjSk9bAwIQKyE3ZEVBJ0sILFw5PS9XDTxdGx4aGBdSRzQJKhwEEkATMBYKSEJWMl4+RAFaWGJMUDogLTYkBg5UKM7+tIwAAAEjSURBVCjPJdCLOlRhAEbh5TRjhhIhiVI55FiRlLBpMOeTmTGmooTu/xJae//v8z3rAj7gyol1sSZKotTfX+JOIa/ErsiLRj7foCFmxZI4EPcKeSE2xFNRFtVyuUpVzIgnoi5y9XqO77mcEdPiRERRdEIxiooUxVtxLDKZzDG/FbIlHosx8VchC2Je7Ih/ChkqFIYoiE3xWfxRyITYFzUxXKsN0263k7R5Kc5FNps951Yh78Uj8UXcKCSdTh9yKL6KSzGSpFIZoSK2xYUYSNLtdunG+SjeiDNx1mw2acZZFCvik/ilkCnxXLwT1wpJpVKnnIpx8aCQvlarRSvON/FDDCbp9Xr04qyKPXEkjjqdDp04c+K1eCZ+KmRZfBCTYlTJ9/8Bx1Z3PXy8cW0AAAAASUVORK5CYII=") repeat-x 0 100%;
+                                        }
+                                }
+                                .live-mask{
+                                    z-index: 6;
+                                    position: absolute;
+                                    left: 0;
+                                    top:0;
+                                    width:100%;
+                                    height: 100%;
+                                    background: #000;
+                                    opacity: .31;
+                                }
+                                .live-info{
+                                    z-index: 10;
+                                    position: absolute;
+                                    top:260px;
+                                    width: 100%;
+                                    text-align: center;
+                                    .live-info-name{
+                                        font-size: 16px;
+                                        line-height: 26px;
+                                    }
+                                    .live-info-desc{
+                                        font-size: 14px;
+                                        line-height: 24px;
+                                    }
+                                }
+                            }
+                            .live-item:first-child{
+                                display: block;
+                            }
+                        }
+                        .live-index{
+                            z-index:7;
+                            position: absolute;
+                            left: 0;
+                            top:325px;
+                            width:100%;
+                            text-align: center;
+                            line-height: 8px;
+                            .live-item{
+                                display: inline-block;
+                                width:8px;
+                                height: 8px;
+                                background: @normalcolor;
+                                margin: 0 4px;
+                                border-radius: 4px;
+                            }
+                        }
+                        .live-button{
+                            z-index: 10;
+                            position: absolute;
+                            top:145px;
+                            background: rgba(0,0,0,.42);
+                            width:20px;
+                            height: 48px;
+                            line-height: 48px;
+                            color:@normalcolor;
+                            text-align: center;
+                        }
+                        .live-button-left{
+                            left:0;
+                        }
+                        .live-button-right{
+                            right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

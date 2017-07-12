@@ -1,0 +1,95 @@
+@topbackground: #e3e4e5;
+@fontcolor : #999;
+@hovercolor: #c81623;
+@hoverbackground:#f4f4f4;
+@activebackground: #f10215;
+@activecolor: white;
+@fore1color:#f10215;
+
+.clearfix{
+    &:after{
+    clear: both;
+    display: block;
+    content: " ";
+    }
+}
+
+// TOP STYLE
+#top-site-user{
+    background: @topbackground;
+    color: @fontcolor;
+    font-size: 14px;
+    .w{
+        .clearfix;
+        .fl{
+            float:left;
+            .dorpdown{
+                position: relative;
+                    .icon-container{
+                        padding :5px;
+                        cursor: pointer;
+                        &:hover{
+                        background-color: white;
+                        }
+                    }
+                    .dorpdown-container{
+                        z-index: 10;
+                        position: absolute;
+                        background-color: white;
+                        display:none;
+                        border: 1px solid #eee;
+                        width: 320px;
+                        padding: 0 0 10px 10px;;
+                        &:hover{
+                            display: block;
+                        }
+                        .item{
+                            box-sizing: content-box;
+                            float: left;
+                            width:60px;
+                            margin-top: 10px;
+                            a{
+                                padding:3px 5px;
+                                color: @fontcolor;
+                                &:hover{
+                                    background-color: @hoverbackground;
+                                    color: @hovercolor;
+                                }
+                                
+                            }
+                            a.active{
+                                background-color: @activebackground;
+                                color: @activecolor;
+                            }
+                        }
+                    }
+                    &:hover .dorpdown-container{
+                        display: block;
+                    }
+                }
+            }
+        .fr{
+            float: right;
+            .item{
+                float: left;
+                padding :5px;
+                >a{
+                    color: @fontcolor;
+                }
+                >a:hover{
+                    color: @hovercolor;
+                }
+            }
+            .spacer{
+                font-size: 8px;
+                line-height: 2em;
+            }
+            .fore1{
+                >a{
+                    color: @fore1color;
+                }
+            }
+        }
+    }
+}
+

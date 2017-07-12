@@ -1,0 +1,118 @@
+@import "color.less";
+
+// HEADER STYLE
+
+
+
+#header{
+    .w{
+        position: relative;
+        height: 140px;
+        .search-container{
+            position: relative;
+            height: 90px;
+            .search-form{
+                position: absolute;
+                width: 420px;
+                top:50%;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 0;
+                #search-input{
+                    width: 420px;
+                    height: 35px;
+                    border: 1px solid @inputcolor;
+                    font-size: 18px;
+                    padding-left: 8px;
+                    &:focus{
+                        border-color: @inputcolor;
+                    }
+                }
+                .photo-search-button{
+                    position: absolute;
+                    transform: translate(-50%,-50%);
+                    top: 50%;
+                    right: 12%;
+                    font-size: 22px;
+                    cursor: pointer;
+                }
+                .button{
+                    position: absolute;
+                    transform: translateY(-50%);
+                    top:50%;
+                    right: -10px;
+                    background-color: @inputcolor;
+                    color: white;
+                    width:50px;
+                    height: 35px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .cat-container{
+            border: 1px solid @catbordercolor;
+            position: absolute;
+            // 
+            top:50%;
+            right: 10%;
+            width: 200px;
+            height: 35px;
+            color: @catfontcolor;
+            line-height: 35px;
+            text-align: center;
+            .button{
+                color:@catfontcolor;
+                cursor: pointer;
+            }
+        }
+        .hotwords{
+            position: absolute;
+            transform: translateX(-50%);
+            top:85px;
+            left: 50%;
+            width:420px;
+            height: 20px;
+            line-height: 20px;
+            color: @fontcolor;
+            font-size: 12px;
+            .item{
+                margin-right: 10px;
+                cursor: pointer;
+            }
+            .item:nth-child(1){
+                color: @holocolor;
+            }
+        }
+        .navitems{
+            .clearfix;
+            position: absolute;
+            left: 200px;
+            bottom:0;
+            width: 799px;
+            height: 40px;
+            .navitems-group1,.navitems-group2,.navitems-group3,.spacer{
+                float: left;
+            }
+            .item{
+                float:left;
+                margin-left: 30px;
+                a{
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 40px;
+                    height: 40px;
+                    color: @itemscolor;
+                    &:hover{
+                        color: @itemshovercolor;
+                    }
+                }
+            }
+            .spacer{
+                line-height: 40px;
+                height: 40px;
+                font-size: 12px;
+            }
+
+        }
+    }
+} 

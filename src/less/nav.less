@@ -1,0 +1,415 @@
+@import "color.less";
+
+.none{
+    display: none;
+}
+.block{
+    display: block;
+}
+#nav{
+    margin-bottom: 10px;
+    .w{
+        .clearfix;
+        .col1,.col2,{
+            float:left;
+            height:100%;
+        }
+        .col3{
+            float: right;
+        }
+        .col1{
+            position: relative;
+            margin-right: 10px;
+            width:190px;
+            .menu{
+                background-color: @navbackground;
+                padding: 16px 0;
+                height: 448px;
+                position: relative;
+                .menu-item{
+                    padding-left: 12px;
+                    height: 28px;
+                    line-height: 28px;
+                    &:hover{
+                        background-color: @navhoverbackground;
+                    }
+                    &:hover .cate-pop{
+                        display: block;
+                    }
+                    a,span{
+                        font-size: 14px;
+                        color:@normalcolor;
+                    }
+                    a:hover{
+                        color: @hovercolor;
+                    }
+                    .cate-pop{
+                        display: none;
+                        overflow: hidden;
+                        position: absolute;
+                        left: 190px;
+                        top: 0;
+                        width: 998px;
+                        // max-height: 478px;
+                        overflow: hidden;
+                        border: 1px solid @catepopbackgroundcolor;
+                        background-color: @catepopbackgroundcolor;
+                        box-shadow: 2px 0 5px rgba(0, 0, 0, .3);
+                        transition: top .5 ease;
+                        z-index: 10;
+                        .cate-part{
+                            overflow: hidden;
+                            padding:20px 0 10px;
+                                .cate-part-col1{
+                                    float: left;
+                                    width: 800px;
+                                   
+                                     .cate-channel{
+                                        overflow: hidden;
+                                        padding-left: 20px;
+                                        height: 24px;
+                                        .cate-channel-link{
+                                            float:left;
+                                            margin-right: 10px;
+                                            padding: 0 10px;
+                                            height: 24px;
+                                            line-height: 24px;
+                                            font-size: 14px;
+                                            font-weight: 500;
+                                            background-color: @channelbackgroundcolor;
+                                            &:hover{
+                                                color:@normalcolor;
+                                                background-color: @catechannelhovercolor;
+                                            }
+                                            .arrow-right{
+                                                    font-size: 10px;
+                                            }
+
+                                        }
+                                    }
+
+                                    .cate-detail{
+                                        overflow: hidden;
+                                        padding: 10px 0 0 20px;
+                                        .cate-detail-item{
+                                            position: relative;
+                                            padding-left: 80px;
+                                            .cate-detail-title{
+                                                overflow: hidden;
+                                                position: absolute;
+                                                left: 0;
+                                                top:6px;
+                                                width: 70px;
+                                                text-align: right;
+                                                font-weight:700;
+                                                white-space: nowrap;
+                                                text-overflow: ellipsis;
+                                                .cate-detail-title-link{
+                                                    color: @fontcolor;
+                                                    font-size: 12px;
+                                                    &:hover{
+                                                        color: @hovercolor;
+                                                    }
+                                                    .arrow-right{
+                                                        font-size: 10px;
+                                                    }
+                                                }
+                                            }
+                                            .cate-detail-content{
+                                                overflow: hidden;
+                                                padding: 6px 0;
+                                                border-top: 1px solid #eee;
+                                                .cate-detail-content-link{
+                                                    float: left;
+                                                    margin: 4px 0;
+                                                    padding: 0 10px;
+                                                    height: 16px;
+                                                    line-height: 16px;
+                                                    font-size: 12px;
+                                                    border-left: 1px solid #e0e0e0;
+                                                    white-space: nowrap;
+                                                    color: @fontcolor;
+                                                    &:hover{
+                                                        color: @hovercolor;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .cate-detail-item:first-child .cate-detail-content{
+                                            border-top: none;
+                                        }
+                                    }
+
+
+                            }
+                            .cate-part-col2{
+                                float: right;
+                                width: 198px;
+                                .cate-brand{
+                                    margin: auto;
+                                    width: 169px;
+                                    font-size: 0;
+                                    .cate-brand-link{
+                                        overflow: hidden;
+                                        display: inline-block;
+                                        width: 83px;
+                                        height: 35px;
+                                        margin: 0 0 1px 1px;
+                                        background-color: #e7e7e7
+                                    }
+                                }
+                                .cate-promotion{
+                                    width: 168px;
+                                    margin:10px auto 0;
+                                    .cate-promotion-link{
+                                        margin-bottom: 1px;
+                                        display: block;
+                                        height: 134px;
+                                        background-color: #e7e7e7;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+
+
+                    
+                }
+            }
+            .menu-child{
+                display: none;
+                position: absolute;
+                top:0;
+                left:190px;;
+                right: 0;
+                width:100%;
+                background-color: white;
+                box-shadow: 0 0 2px @navbackground;
+            }
+        }
+        .col2{
+            width:790px;
+            height: 480px;
+            .slider{
+                .slider-main{
+                    margin-bottom: 10px;
+                    height: 340px;
+                }
+                .slider-extend{
+                    margin-left: -10px;
+                    height: 130px;
+                    .extend-item{
+                        float:left;
+                        margin-left: 10px;
+                        height: 130px;
+                        width: 390px;
+                    }
+                }
+            }
+        }
+        .col3{
+            margin-left: 10px;
+            width:190px;
+            height: 100%;
+            background-color: @normalcolor;
+            .user{
+                height: 115px;
+                border-bottom:1px solid @bordercolor;
+                padding: 0 15px;
+                .user-info{
+                    position: relative;
+                    padding: 15px 0 15px 58px;
+                    font-size: 15px;
+                     .user-head-picture{
+                        position: absolute;
+                        margin-left: -58px;
+                        overflow: hidden;
+                        border-radius: 50%;
+                        width: 50px;
+                        height: 50px;
+                        img{
+                            width:50px;
+                            height: 50px;
+                        }
+                       a{
+                           position: absolute;
+                           top:0;
+                           left: 0;
+                           display: block;
+                           background-image: url(http://misc.360buyimg.com/mtd/pc/index/home/images/sprite_userinfo@1x.png);
+                           background-position: -70px 0;
+                           background-size: 156px 123px;
+                           background-repeat: no-repeat;
+                           width: 50px;
+                           height: 50px;
+                       }
+                    }
+                    .user-info-tip{
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+                    p{
+                        margin-top:2px;
+                    }
+                    a{  
+                        font-size: 12px;
+                        color: @fontcolor;
+                    }
+                }
+               .user-profit{
+                   overflow: hidden;
+                   margin-right: -10px;
+                   height: 24px;
+                   font-size: 0;
+                   a{
+                       margin-right: 10px;
+                       font-size: 12px;
+                       display: inline-block;
+                       width: 70px;
+                       height: 20px;
+                       line-height: 20px;
+                       text-align: center;
+                       border: 2px solid @userfontcolor;
+                       color: @userfontcolor;
+                       &:hover{
+                           color: @normalcolor;
+                           background-color: @hovercolor
+                       }                   
+                    }
+               }
+            }
+            .news{
+                font-size: 12px;
+                padding: 0 12px;
+                .news-tab{
+                    .tab-head{
+                        position: relative;
+                        padding:8px 0 4px;
+                        border-bottom: 1px solid @bordercolor;
+                        
+                        .tab-head-item{
+                            padding-right: 12px;
+                            padding-left: 12px;
+                            color: @fontcolor;
+                        }
+                        .tab-head-item:nth-child(1){
+                            border-right: 1px solid @bordercolor;
+                        }
+                        .item-first{
+                            padding-left: 0;
+                        }
+                        .item-last{
+                            padding-right: 0;
+                        }
+                        .news-more{
+                            position: absolute;
+                            top:8px;;
+                            right:0;;
+                            color: @fontcolor;
+                        }
+                        
+                    }
+                    .tab-content{
+                        padding: 12px 0;
+                        .tab-content-item{
+                            .news-list{
+                                .news-item{
+                                    max-width: 160px;
+                                    line-height: 24px;
+                                    white-space: nowrap;
+                                    text-overflow: ellipsis;
+                                    overflow: hidden;
+                                   a{
+                                       color:@fontcolor;
+                                       &:hover{
+                                           color: @hovercolor;
+                                       }
+                                   }
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+            .service{
+                overflow: hidden;
+               .tab-head{
+                   margin-left: -1px;
+                   width: 192px;
+                    height: 210px;
+                   overflow: hidden;
+                   font-size: 12px;
+                   .clearfix;
+                   .service-item{
+                       float:left;
+                       overflow: hidden;
+                       width: 47px;
+                       height: 69px;
+                       border-top: 1px solid @bordercolor;
+                       border-left: 1px solid @bordercolor;
+                       text-align: center;
+                       .service-link,.service-ico,.service-text{
+                           display: block;
+                       }
+                       .service-link{
+                           padding-top:14px;
+                           height: 55px;
+                           .service-ico{
+                               margin: 0 auto;
+                               background-image: url(http://misc.360buyimg.com/mtd/pc/index/home/images/sprite_fs@1x.png);
+                               background-size: 156px 148px;
+                               background-repeat: no-repeat;
+                               width: 24px;
+                               height: 24px;
+                           }
+                           .service-ico-huafei{
+                               background-position: 0 -88px;
+                           }
+                           .service-ico-jipiao{
+                               background-position: 0 -44px;
+                           }
+                           .service-ico-jiudian{
+                                background-position: -44px -88px;
+                           }
+                           .service-ico-youxi{
+                               background-position: -88px 0;
+                           }
+                           .service-ico-qiyegou{
+                               background-position: -88px -44px;
+                           }
+                           .service-ico-dianyingpiao{
+                               background-position: -44px -44px;
+                           }
+                           .service-ico-huochepiao{
+                               background-position: -88px -88px;
+                           }
+                           .service-ico-zongchou{
+                               background-position: -132px 0;
+                           }
+                           .service-ico-licai{
+                               background-position: -132px -44px;
+                           }
+                           .service-ico-lipinka{
+                               background-position: -132px -88px;
+                           }
+                           .service-ico-baitiao{
+                               background-position: -44px 0 ;
+                           }
+                            .service-text{
+                                height: 22px;
+                                line-height: 22px;
+                                color: @fontcolor;   
+                                &:hover{
+                                    color:@hovercolor;
+                                }
+                            }
+                       }
+                   }
+               } 
+            }
+        }
+    }
+}

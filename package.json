@@ -7,5 +7,27 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "me <abcgg02@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "normalize.css": "^7.0.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "gulp-changed": "^3.1.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-jscs": "^4.0.0",
+    "gulp-uglify": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/abc02/jd-demo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/abc02/jd-demo/issues"
+  },
+  "homepage": "https://github.com/abc02/jd-demo#readme",
+  "keywords": []
 }

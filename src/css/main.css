@@ -1,0 +1,75 @@
+.wrap {
+  margin: 0 auto;
+  width: 1200px;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.clearfix {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+@font-face {
+  font-family: 'iconfont';
+  /* project id 335998 */
+  src: url('//at.alicdn.com/t/font_w57gmfk64tervn29.eot');
+  src: url('//at.alicdn.com/t/font_w57gmfk64tervn29.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_w57gmfk64tervn29.woff') format('woff'), url('//at.alicdn.com/t/font_w57gmfk64tervn29.ttf') format('truetype'), url('//at.alicdn.com/t/font_w57gmfk64tervn29.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-location {
+  color: red;
+}
+.icon-location:before {
+  content: "\e600";
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+p,
+ul,
+ol,
+li {
+  padding: 0;
+  margin: 0;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+#top-site-user {
+  background: #e3e4e5;
+}
+#top-site-user .fl {
+  float: left;
+}
+#top-site-user .fl .dd {
+  display: none;
+}
+#top-site-user .fl:hover .dd {
+  display: block;
+}
+#top-site-user .fr {
+  float: right;
+}

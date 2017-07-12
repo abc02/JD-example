@@ -1,0 +1,371 @@
+@import "color.less";
+
+body{
+    background-color: #f6f6f6;
+}
+.wrap{
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.clearfix(){
+    &:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+a{
+    color: @fontcolor;
+    font-size: 12px;
+    &:hover{
+        color: @hovercolor;
+    }
+}
+
+
+.rec{
+    margin-bottom: 30px;
+    background-color: #e0e0e0;
+    .w{
+        .rec-list{
+            .clearfix();
+            height: 100px;
+            overflow: hidden;
+            .rec-item{
+                float: left;
+                overflow: hidden;
+                width: 396px;
+                height: 100%;
+                &:hover {
+                opacity: 0.8
+            }
+            }
+            
+        }
+    }
+}
+
+
+
+
+.com{
+        .row1{
+            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAADCAMAAAB/P3U+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkJEODlEQkUxNzk2NjExRTY5OTdDQkQ2NDRFQjFCNUU1IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkJEODlEQkUyNzk2NjExRTY5OTdDQkQ2NDRFQjFCNUU1Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QkQ4OURCREY3OTY2MTFFNjk5N0NCRDY0NEVCMUI1RTUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QkQ4OURCRTA3OTY2MTFFNjk5N0NCRDY0NEVCMUI1RTUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7GI6sZAAAAD1BMVEXa2trExMTBwcHDw8P///8QPEuGAAAABXRSTlP/////APu2DlMAAAAZSURBVHjaYmBgZGCBAwZmJkYkHoocQIABAAogAIEAYnZPAAAAAElFTkSuQmCC") repeat-x 0 18px;
+            line-height: 35px;
+            height: 35px;
+            font-size: 24px;
+            text-align: center;
+            overflow: hidden;
+            padding-bottom:20px;
+            h3{
+                display: inline;
+                padding: 0 50px;
+                font-weight: 400;
+                font-size:26px;
+                font-family: "幼圆";
+                background-color: #f6f6f6;
+            }
+        }
+        .row2{
+            overflow: hidden;
+            .col{
+                float: left;
+                width:590px;
+                margin-right: 10px;
+                // overflow: hidden;
+                .pt-head{
+                    color: @normalcolor;
+                    background-color: @fontcolor;
+                    height: 26px;
+                    padding:16px 20px 16px 25px;
+                    .pt-title{
+                        float:left;
+                        font-size: 22px;
+                        height: 26px;
+                        line-height: 24px;
+                        font-weight: 400;
+                        max-width: 100px;
+                        font-family: "幼圆";
+                        word-break: break-all;
+                        word-wrap: break-word;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                    .pt-qrcode{
+                        float: left;
+                        height: 32px;
+                        margin-left: 15px;
+                        padding-top:3px;
+                        position: relative;
+                        .pt-qrcode-ico{
+                            width: 20px;
+                            height: 20px;
+                            background: url("//misc.360buyimg.com/mtd/pc/index/2.0.0/home/images/pt_qrcode@1x.png")
+                        }
+                        .pt-qrcode-pop{
+                            display: none;
+                            position: absolute;
+                            top:42px;
+                            left: -42px;
+                            background-color: @normalcolor;
+                            text-align: center;
+                            border-style: solid;
+                            border-width: 0 1px 1px;
+                            width: 103px;
+                            box-shadow: 0 0 3px rgba(45, 45, 45, .5);
+                            z-index: 10;
+                            &:hover{
+                                display: block;
+                            }
+                            .pt-qrcode-arrow{
+                                position: absolute;
+                                top: -14px;
+                                left: 44px;
+                                width: 0;
+                                height: 0;
+                                font-size: 0;
+                                line-height: 0;
+                                border-style: solid;
+                                border-width: 7px;
+                                border-color: transparent transparent white transparent;
+                            }
+                            .pt-qrcode-img{
+                                width: 80px;
+                                height: 80px;
+                                padding-top: 10px;
+                                margin: auto;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                            .pt-qrcode-text{
+                                color: @fontcolor;
+                                line-height: 31px;
+                                font-size: 12px;
+                                overflow: hidden;
+                                white-space: nowrap;
+                            }
+                        }
+                        &:hover .pt-qrcode-pop{
+                                display: block;
+                        }
+                    }
+                    .pt-tags{
+                        max-width: 405px;
+                        float: right;
+                        overflow: hidden;
+                        text-align: right;
+                        height: 28px;
+                        .pt-tags-item{
+                            display: inline-block;
+                            line-height: 24px;
+                            height: 24px;
+                            padding: 0 10px;
+                            border: 1px solid @normalcolor;
+                            color: @normalcolor;
+                            margin-left:10px;
+                            margin-bottom:10px;
+                            max-width: 100px;
+                            word-break: break-all;
+                            word-wrap: break-word;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            border: 1px solid @fontcolor;
+                            font-size: 12px;
+                            &:hover{
+                                border-color:@normalcolor!important;
+                            }
+                            background-color: hsla(0,0%,100%,.2);
+                        }
+                    }
+                }
+                .pt-warp{
+                    padding: 10px;
+                    background-color: @normalcolor;
+                    overflow: hidden;
+                    .pt-content{
+                        overflow: hidden;
+                        position: relative;
+                        .pt-content-inner{
+                            .pt-cover{
+                            position: relative;
+                            float: left;
+                            width: 183px;
+                            height: 260px;
+                            overflow: hidden;
+                            margin-right: 10px;
+                            background-color: @normalcolor;
+                                .pt-link{
+                                    .pt-img{
+                                        display: block;
+                                        width:193px;
+                                        height: 260px;
+                                        transition: transform .2s;
+                                    }
+                                }
+                                    &:hover .pt-img{
+                                        transform: translateX(-10px);
+                                    }
+                            }
+                            .pt-bi{
+                                float: left;
+                                width: 375px;
+                                height: 260px;
+                                position: relative;
+                                overflow: hidden;
+                                .pt-bi-split{
+                                    position: absolute;
+                                    display: block;
+                                    background-color: #e6e6e6;
+                                }
+                                .pt-bi-split-h{
+                                    top:130px;
+                                    left: 0;
+                                    width:500px;
+                                    height: 1px;
+                                }
+                                .pt-bi-split-v{
+                                    top:0;
+                                    left:186px;
+                                    height: 500px;
+                                    width: 1px;
+                                }
+                                .pt-link{
+                                    float:left;
+                                    width:186px;
+                                    height: 130px;
+                                    position: relative;
+                                    .pt-bi-title{
+                                        position: absolute;
+                                        top:25px;
+                                        left: 25px;
+                                        font-size: 14px;
+                                        max-width: 130px;
+                                        overflow: hidden;
+                                        word-wrap: break-word;
+                                        word-break: break-all;
+                                        white-space: nowrap;
+                                        text-overflow: ellipsis;
+                                        color:@fontcolor;
+                                        z-index: 1;
+                                    }
+                                    .pt-bi-desc{
+                                        position: absolute;
+                                        top:50px;
+                                        left: 25px;
+                                        font-size: 12px;
+                                        color: @fontcolor;
+                                        max-width: 50px;
+                                        z-index: 1;
+                                    }
+                                    .pt-bi-img{
+                                        position: absolute;
+                                        bottom: 10px;
+                                        right: 5px;
+                                        display: block;
+                                        width: 100px;
+                                        height: 100px;
+                                        background-color: #f7f7f7;
+                                        transition: transform .5s;
+                                    }
+                                    &:hover .pt-bi-img{
+                                        transform: translateX(-5px);
+                                    }
+                                }
+                            }
+                            .pt-more{
+                                clear: both;
+                                height: 130px;
+                                overflow: hidden;
+                                padding-top: 10px;
+                                .pt-link{
+                                    display: block;
+                                    float: left;
+                                    height: 127px;
+                                    width:180px;
+                                    overflow: hidden;
+                                    margin-right: 10px;
+                                    background-color: #e7e7e7;
+                                    .pt-img{
+                                        display: block;
+                                        overflow: hidden;
+                                        width: 193px;
+                                        height: 127px;
+                                        transition: transform .4s;
+                                        &:hover{
+                                            transform: translateX(-10px);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .pt-foot{
+                        padding: 10px 0 0;  
+                        clear: both;
+                        background-color: @normalcolor;
+                        .pt-logo{
+                            position: relative;
+                            .pt-logo-list-wrap{
+                                width: 100%;
+                                height: 35px;
+                                overflow: hidden;
+                                .pt-logo-list{
+                                    .pt-logo-item{
+                                        float:left;
+                                        border-right:1px solid #dedfe0;
+                                        padding: 0 12px;
+                                        height: 20px;
+                                        margin-top:7px;
+                                        .pt-img{
+                                            display: block;
+                                            width:70px;
+                                            height: 35px;
+                                            margin-top:-7px;
+                                            &:hover {
+                                                opacity: .7;
+                                            };
+                                        }
+                                    }
+                                    .pt-logo-item:last-child{
+                                        border-right: 0;
+                                    }
+                                }
+                            }
+                            .pt-logo-buttons-wrap{
+                                display: none;
+                                .pt-link-button{
+                                    position: absolute;
+                                    height: 35px;
+                                    line-height: 35px;
+                                    color:@fontcolor;
+                                    background-color: @normalcolor;
+                                    font-weight: 700;
+                                    font-size: 10px;
+                                    top:0;
+                                    z-index: 1000;
+                                    &:hover{
+                                        color: @hovercolor;
+                                    }   
+                                }
+                                .button-left {
+                                    left: 0;;
+                                }
+                                .button-right {
+                                    right: 0;
+                                }
+                            
+                            }
+                            &:hover .pt-logo-buttons-wrap{
+                                display: block
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+}
